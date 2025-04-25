@@ -1,0 +1,119 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  /* Layout principal */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  /* Conteúdo principal */
+  .content {
+    flex: 2;
+    min-width: 300px;
+  }
+  
+  .content h2 {
+    margin-top: 30px;
+    font-size: 1.8rem;
+    color: #d62828;
+  }
+  
+  .content h3 {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    color: #003049;
+  }
+  
+  .content p {
+    margin-top: 10px;
+    text-align: justify;
+  }
+  
+  /* Galeria de imagens */
+  .images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 250px;
+  }
+  
+  .images img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+  }
+  
+  /* Rodapé */
+  footer {
+    margin-top: 40px;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .images {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .images img {
+      width: 48%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .images img {
+      width: 100%;
+    }
+  
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    .content h2 {
+      font-size: 1.5rem;
+    }
+  
+    .content h3 {
+      font-size: 1.2rem;
+    }
+  }
+  
